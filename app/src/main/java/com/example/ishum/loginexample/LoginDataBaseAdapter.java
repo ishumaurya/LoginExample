@@ -66,7 +66,7 @@ public class LoginDataBaseAdapter
     }
     public String getSinlgeEntry(String userName)
     {
-        Cursor cursor=db.query("LOGIN", null, " USERNAME=?", new String[]{userName}, null, null, null);
+        Cursor cursor=db.query("LN", null, " USERNAME=?", new String[]{userName}, null, null, null);
         if(cursor.getCount()<1) // UserName Not Exist
         {
             cursor.close();
